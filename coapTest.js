@@ -3,7 +3,7 @@ const bl = require('bl');
 
 const config = {
     host: 'xcelautovik.in',
-    pathname: process.argv[2],
+    pathname: process.argv[2] ? process.argv[2] : '/getData',
     port: 8765,
     method: 'post',
     observe: false,
