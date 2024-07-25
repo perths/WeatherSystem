@@ -1,0 +1,19 @@
+{
+  "name": "weathersystem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sensor": "node sensor.js",
+    "coapSv": "node coapSv.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@solana/web3.js": "^1.95.1",
+    "aws-iot-device-sdk": "^2.2.15",
+    "borsh": "^2.0.0",
+    "coap": "^1.4.0",
+    "mqtt": "^5.8.1"
+  }
+}
