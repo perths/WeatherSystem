@@ -8,6 +8,10 @@ npm i
 ```sh
 npm run coapSv
 ```
+Run CoAP Client to test endpoints
+```sh
+node coapTest.js
+```
 
 ## Run Sensor Node
 Using node.js
