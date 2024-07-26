@@ -11,6 +11,10 @@ const config = {
 
 const coapReq = coap.request(config);
 
+if (config.pathname == '/postData') {
+    coapReq.write(JSON.stringify({ temperature: 28, humidity: 55, time: Date.now() }));
+}
+
 coapReq.on('response', (res) => {
     res.pipe(bl(function (err, data) {
         var json = JSON.parse(data);

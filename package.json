@@ -2,7 +2,7 @@
   "name": "weathersystem",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "sensor.js",
   "scripts": {
     "sensor": "node sensor.js",
     "coapSv": "node coapSv.js"
