@@ -18,8 +18,5 @@ COPY --chown=node:node . ./
 # running npm ci which will perform a clean install all the packages
 RUN npm ci
 
-# copying rest of the project files to the work dir
-COPY --chown=node:node sensor.js config.js ./
-
 #starting the sensor script
 CMD ["node","sensor.js"]
